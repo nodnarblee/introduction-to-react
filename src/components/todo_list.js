@@ -2,12 +2,11 @@ import React from 'react';
 
 export default React.createClass({
     render() {
+        var tasks = ['Buy Milk', 'Clean Room', 'Pay Phone Bill', 'Learn ReactJS'];
         return (
-            <div>
-              <li>Buy Milk</li>
-              <li>Clean Room</li>
-              <li>Pay Phone Bill</li>
-            </div>
+            <ul>
+            { tasks.map((item, index)=>{ return (<li key={index}>{item}</li>) })}
+            </ul>
         )
     }
 

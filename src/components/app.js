@@ -4,13 +4,12 @@ import ToDoForm from './todo_form.js';
 
 export default React.createClass({
     render() {
+        let name = `${this.props.name}`
         return (
             <div>
+                <h1>{ name }'s todo list</h1>
                 < ToDoForm />
                 < ToDoList />
-                <div>
-                    <h1>Hello World!</h1>
-                </div>
             </div>
         )
     }

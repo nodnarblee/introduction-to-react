@@ -4,7 +4,7 @@ import App from './components/app.js';
 
 
 ReactDOM.render(
-    < App />,
+    < App name="Brandon"/>,
     document.getElementById('app')
 )
 
